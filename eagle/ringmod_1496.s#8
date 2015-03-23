@@ -9942,9 +9942,9 @@ NS Package M08A</description>
 <instance part="R13" gate="G$1" x="71.12" y="10.16" rot="R90"/>
 <instance part="R14" gate="G$1" x="81.28" y="10.16" rot="R90"/>
 <instance part="R15" gate="G$1" x="99.06" y="17.78"/>
-<instance part="IC2" gate="A" x="127" y="35.56"/>
+<instance part="IC2" gate="A" x="132.08" y="35.56"/>
 <instance part="C3" gate="G$1" x="147.32" y="35.56" rot="R90"/>
-<instance part="R16" gate="G$1" x="127" y="22.86"/>
+<instance part="R16" gate="G$1" x="132.08" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -10161,6 +10161,38 @@ NS Package M08A</description>
 <pinref part="C3" gate="G$1" pin="-"/>
 <pinref part="OUTPUT" gate="1" pin="MP"/>
 <wire x1="157.48" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="+"/>
+<pinref part="IC2" gate="A" pin="OUT"/>
+<wire x1="139.7" y1="35.56" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="25.4" x2="142.24" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="25.4" x2="142.24" y2="35.56" width="0.1524" layer="91"/>
+<junction x="142.24" y="35.56"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="IC2" gate="A" pin="-IN"/>
+<pinref part="IC1" gate="G$1" pin="-OUT"/>
+<wire x1="124.46" y1="33.02" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="33.02" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="33.02" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="127" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="25.4" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
+<junction x="121.92" y="33.02"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="+OUT"/>
+<pinref part="IC2" gate="A" pin="+IN"/>
+<wire x1="111.76" y1="38.1" x2="124.46" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
